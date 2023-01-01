@@ -1,7 +1,10 @@
-// Genuary, Prompt 1: Kinetics
+// Genuary, Prompt 1: Perfect Loop
 // 
 // Marc Duiker, Jan 2023
-// Created using p5js
+// Created using p5js for https://genuary.art.
+//
+// Pattern repeats after +/- 22 seconds.
+
 
 const maxCircles = 5;
 const maxAngle = 0;
@@ -11,9 +14,13 @@ const minAngleIncrement = 0.05;
 const maxRadius = 250;
 const minRadius = 50;
 let circles = [];
+let screenW;
+let screenH;
 
 function setup() {
-  createCanvas(600, 600);
+  screenW = windowWidth;
+  screenH = windowHeight;
+  createCanvas(screenW, screenH);
   frameRate(30);
   let direction = 1;
   for (let c = 0; c < maxCircles; c++) {
@@ -28,7 +35,7 @@ function setup() {
 
 function draw() {
   background(10);
-  translate(300, 300);
+  translate(screenW/2, screenH/2);
   
   circles.forEach(circle => {
     circle.draw();
