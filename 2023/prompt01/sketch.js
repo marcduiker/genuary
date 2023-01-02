@@ -76,3 +76,9 @@ class Circle {
     circle(this.x, this.y, this.radius / 3);
   }
 }
+
+function keyPressed() {
+  if (key === 's') {
+    saveGif('genuary2023_prompt1', 10);
+  }
+}

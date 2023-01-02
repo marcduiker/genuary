@@ -45,5 +45,10 @@ function draw() {
   if (i == 4) {
     i = 0;
   }
-    
+}
+
+function keyPressed() {
+  if (key === 's') {
+    saveGif('genuary2023_prompt2', 10);
+  }
 }
