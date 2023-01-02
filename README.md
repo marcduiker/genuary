@@ -1,6 +1,8 @@
 # Genuary
 
-Repo for my contributions to https://genuary.art/
+Repo for my contributions to [genuary.art](https://genuary.art/).
+
+*Please don't use these for NFT based art.* 🙏
 
 ## 2023
 
