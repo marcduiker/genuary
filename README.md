@@ -33,3 +33,10 @@ Repo for my contributions to [genuary.art](https://genuary.art/).
 
 - [Live sketch](https://editor.p5js.org/marcduiker/full/alDGhiITz)
 - [Code](2023/prompt04/sketch.js)
+
+### Prompt 5: Debug view
+
+![Glitch](2023/prompt05/genuary_prompt5_10fps.gif)
+
+- [Live sketch](https://editor.p5js.org/marcduiker/sketches/tNVGpKDiy) (Watch the console output)
+- [Code](2023/prompt05/sketch.js)
