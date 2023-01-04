@@ -17,12 +17,19 @@ Repo for my contributions to [genuary.art](https://genuary.art/).
 
 ![Made in 10 minutes](2023/prompt02/genuary_prompt2_15fps.gif)
 
-- [Live sketch](https://editor.p5js.org/marcduiker/full/j4Uwsq8rB) (This is an interactive one, mouse the mouse or touch to see the effect.)
+- [Live sketch](https://editor.p5js.org/marcduiker/full/j4Uwsq8rB) (interactive)
 - [Code](2023/prompt02/sketch.js)
 
 ### Prompt 3: Glitch
 
 ![Glitch](2023/prompt03/genuary_prompt3_15fps.gif)
 
-- [Live sketch](https://editor.p5js.org/marcduiker/full/-VKfHUvkj) (This is an interactive one)
+- [Live sketch](https://editor.p5js.org/marcduiker/full/-VKfHUvkj) (interactive)
 - [Code](2023/prompt03/sketch.js)
+
+### Prompt 4: Intersections
+
+![Glitch](2023/prompt04/genuary2023_prompt4.gif)
+
+- [Live sketch](https://editor.p5js.org/marcduiker/full/alDGhiITz)
+- [Code](2023/prompt04/sketch.js)
