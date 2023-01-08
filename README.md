@@ -40,3 +40,17 @@ Repo for my contributions to [genuary.art](https://genuary.art/).
 
 - [Live sketch](https://editor.p5js.org/marcduiker/sketches/tNVGpKDiy) (Watch the console output)
 - [Code](2023/prompt05/sketch.js)
+
+### Prompt 6: Steal like an artist
+
+![Glitch](2023/prompt06/genuary2023_prompt6.gif)
+
+- [Live sketch](https://editor.p5js.org/marcduiker/full/ThQlj8FfO) (interactive)
+- [Code](2023/prompt06/sketch.js)
+
+### Prompt 7: Sample a color palette from your favorite movie/album cover
+
+![Glitch](2023/prompt07/genuary2023_prompt7.gif)
+
+- [Live sketch](https://editor.p5js.org/marcduiker/full/0KakeMws0) (interactive)
+- [Code](2023/prompt07/sketch.js)
