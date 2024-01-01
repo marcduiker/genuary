@@ -4,6 +4,15 @@ Repo for my contributions to [genuary.art](https://genuary.art/).
 
 *Please don't use these for NFT based art.* 🙏
 
+## 2024
+
+### Prompt 1: Particles
+
+![Particles](2024/prompt01/genuary2024_prompt1.gif)
+
+- [Live sketch](https://openprocessing.org/sketch/2134974)
+- [Code](2024/prompt01/sketch.js)
+
 ## 2023
 
 ### Prompt 1: Perfect loop

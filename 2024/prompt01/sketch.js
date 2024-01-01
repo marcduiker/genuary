@@ -68,6 +68,6 @@ class Particle {
 
 function keyPressed() {
   if (key === 's') {
-    saveGif('genuary2023_prompt1', 10);
+    saveGif('genuary2024_prompt1', 2);
   }
 }
