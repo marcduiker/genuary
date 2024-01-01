@@ -13,6 +13,11 @@ Repo for my contributions to [genuary.art](https://genuary.art/).
 - [Live sketch](https://openprocessing.org/sketch/2134974)
 - [Code](2024/prompt01/sketch.js)
 
+### Prompt 2: No palette
+
+- [Live sketch](https://openprocessing.org/sketch/2135107)
+- [Code](2024/prompt02/sketch.js)
+
 ## 2023
 
 ### Prompt 1: Perfect loop
