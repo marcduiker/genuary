@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="p5.min.js"></script>
+  </head>
+
+  <body>
+    <div id="controls">
+      <span>Color bands</span>
+      <input type="range" min="3" max="21" value="5" id="bandsSlider">
+      <button id="runButton" onclick="updateColors()">Randomize colors</button>
+      <br />
+      <span>Left click on the color to copy the hex value.</span>
+    </div>
+    <div id="sketch"></div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
