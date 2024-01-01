@@ -12,7 +12,9 @@
     <div id="controls">
       <span>Color bands</span>
       <input type="range" min="3" max="21" value="5" id="bandsSlider">
-      <button id="runButton" onclick="updateColors()">Randomize colors</button>
+      <span>Speed</span>
+      <input type="range" min="1" max="5" value="1" step="1" id="speedSlider">
+      <button id="runButton" onclick="toggleAuto()">Stop randomization</button>
       <br />
       <span>Left click on the color to copy the hex value.</span>
     </div>

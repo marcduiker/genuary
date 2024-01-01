@@ -10,20 +10,20 @@ let bands;
 let color1;
 let color2;
 let colorArray = [];
+let speed;
+let autoUpdate = true;
 
 function setup() {
   screenW = windowWidth-100;
   screenH = windowHeight;
   createCanvas(screenW, screenH);
-
   color1 = color(random(255), random(255), random(255));
   color2 = color(random(255), random(255), random(255));
 
   const bandsSlider = document.querySelector("#bandsSlider");
   bands = bandsSlider.value;
-  bandsSlider.addEventListener("change", (event) => {
-      updateBands(bandsSlider.value);
-    });
+  const speedSlider = document.querySelector("#speedSlider");
+  speed = speedSlider.value;
   updateColorArray();
 }
 
@@ -37,6 +37,13 @@ function updateColorArray() {
 
 function draw() {
   background(10);
+  speed = select("#speedSlider").value();
+  bands = select("#bandsSlider").value();
+  frameRate(speed);
+  if (autoUpdate) {
+    updateColors();
+  }
+
   const bandWidth = screenW / bands;
   const bandHeight = screenH;
   for (let b = 0; b < bands; b++) {
@@ -51,15 +58,23 @@ function draw() {
   }
 }
 
-function updateBands(nrOfBands) {
-  bands = nrOfBands;
-  updateColorArray();
-}
-
 function updateColors() {
   color1 = color(random(255), random(255), random(255));
   color2 = color(random(255), random(255), random(255));
   updateColorArray();
+}
+
+function toggleAuto() {
+  autoUpdate =! autoUpdate;
+  if (autoUpdate) {
+    select("#runButton").elt.innerText = 'Stop Randomization';
+  } else {
+      select("#runButton").elt.innerText = 'Start Randomization';
+  }
+}
+
+function updateSpeed(speedValue) {
+  speed = speedValue;
 }
 
 function mouseClicked() {
