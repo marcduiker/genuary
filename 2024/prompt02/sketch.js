@@ -105,3 +105,9 @@ function mouseClicked() {
   if (mappedBand < 0) return;
   navigator.clipboard.writeText(colorArray[mappedBand].toString('#rrggbb'));
 }
+
+function keyPressed() {
+  if (key === 's') {
+    saveGif('genuary2024_prompt2', 3);
+  }
+}
