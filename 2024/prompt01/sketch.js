@@ -45,6 +45,8 @@ class Particle extends p5.Vector {
     this.velocity.mult(random(0.5, 1.5));
     this.acceleration = createVector(random(-0.5, 0.5), 0);
     this.opacity = 255;
+    this.color = color('#ff31ff');
+    this.time = 0;
   }
 
   update() {
@@ -54,15 +56,22 @@ class Particle extends p5.Vector {
     if (this.y < 0 || this.y > screenH || this.x < 0 || this.x > screenW) {
       this.init();
     }
+    this.time += 1;
   }
 
   getOpacity() {
     return map(p5.Vector.dist(sourceVector, this), 0, this.sourceVector.mag() / 1.1, 255, 0);
   }
 
+  getFillColor() {
+    let mapped = map(this.time, 15, 60, 0, 1);
+    return lerpColor(color(255, 49, 255, this.opacity), color(49, 223, 225, this.opacity), mapped);
+  }
+
   draw() {
-    noFill();
-    fill(230, this.opacity);
+    strokeWeight(0.5);
+    stroke(10);
+    fill(this.getFillColor());
     rectMode(CENTER);
     rect(this.x, this.y, this.size);
   }
