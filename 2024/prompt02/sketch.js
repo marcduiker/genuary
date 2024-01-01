@@ -7,21 +7,32 @@
 let screenW;
 let screenH;
 let bands;
+let band;
+let bandY;
 let color1;
 let color2;
 let colorArray = [];
 let speed;
 let autoUpdate = true;
+let resetBackground = false;
 
 function setup() {
-  screenW = windowWidth-100;
+  screenW = windowWidth - 100;
   screenH = windowHeight;
   createCanvas(screenW, screenH);
+  frameRate(30);
   color1 = color(random(255), random(255), random(255));
   color2 = color(random(255), random(255), random(255));
+  band = 0;
+  bandY = screenH;
 
   const bandsSlider = document.querySelector("#bandsSlider");
   bands = bandsSlider.value;
+  bandsSlider.addEventListener("change", (event) => {
+    band = 0;
+    bandY = screenH;
+    resetBackground = true;
+  });
   const speedSlider = document.querySelector("#speedSlider");
   speed = speedSlider.value;
   updateColorArray();
@@ -36,25 +47,37 @@ function updateColorArray() {
 }
 
 function draw() {
-  background(10);
+  if (resetBackground) {
+    background(240);
+    resetBackground = false;
+  }
   speed = select("#speedSlider").value();
   bands = select("#bandsSlider").value();
-  frameRate(speed);
   if (autoUpdate) {
-    updateColors();
-  }
+    const bandWidth = screenW / bands;
+    const bandHeight = screenH;
+    let bandColor = colorArray[band];
+    let bandX = band * bandWidth;
+    if (bandX == 0 && bandY == bandHeight && band == 0) {
+      updateColors();
+    }
 
-  const bandWidth = screenW / bands;
-  const bandHeight = screenH;
-  for (let b = 0; b < bands; b++) {
-    let bandColor = colorArray[b];
-    let bandX = b * bandWidth;
+    noStroke();
     fill(bandColor);
-    rect(bandX, 0, bandX + bandWidth, bandHeight);
-    
+    rect(bandX, bandY, bandWidth, bandHeight);
+
     fill(10);
     textAlign(CENTER);
-    text(bandColor.toString('#rrggbb'), bandX + bandWidth/2, bandHeight-100);
+    text(bandColor.toString('#rrggbb'), bandX + bandWidth / 2, bandHeight - 50);
+    bandY -= speed;
+    if (bandY+speed < 0) { 
+      bandY = screenH;
+      if (band < bands - 1) {
+        band += 1;
+      } else {
+        band = 0;
+      }
+    }
   }
 }
 
@@ -65,11 +88,11 @@ function updateColors() {
 }
 
 function toggleAuto() {
-  autoUpdate =! autoUpdate;
+  autoUpdate = !autoUpdate;
   if (autoUpdate) {
-    select("#runButton").elt.innerText = 'Stop Randomization';
+    select("#runButton").elt.innerText = 'Stop';
   } else {
-      select("#runButton").elt.innerText = 'Start Randomization';
+    select("#runButton").elt.innerText = 'Start';
   }
 }
 
