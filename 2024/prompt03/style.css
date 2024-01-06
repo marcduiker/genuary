@@ -12,10 +12,3 @@ body {
 canvas {
   display: block;
 }
-
-#controls {
-  display: flex;
-  flex-direction: column;
-  width: 100px;
-  height: 100vh;
-}

@@ -17,7 +17,7 @@ let t2Inc = 0.015;
 const strokeThickness = 10;
 
 function setup() {
-  screenW = windowWidth - 100;
+  screenW = windowWidth;
   screenH = windowHeight;
   createCanvas(screenW, screenH);
   frameRate(30);
