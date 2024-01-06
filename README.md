@@ -18,6 +18,20 @@ Repo for my contributions to [genuary.art](https://genuary.art/).
 - [Live sketch](https://openprocessing.org/sketch/2135107)
 - [Code](2024/prompt02/sketch.js)
 
+### Prompt 3: Droste
+
+![Droste](2024/prompt03/genuary2024_prompt3.gif)
+
+- [Live sketch](https://openprocessing.org/sketch/2136268)
+- [Code](2024/prompt03/sketch.js)
+
+### Prompt 4: Pixels
+
+![Pixels](2024/prompt04/genuary2024_prompt4.gif)
+
+- [Live sketch](https://openprocessing.org/sketch/2137654)
+- [Code](2024/prompt04/sketch.js)
+
 ## 2023
 
 ### Prompt 1: Perfect loop

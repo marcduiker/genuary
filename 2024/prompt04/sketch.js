@@ -13,8 +13,10 @@ let tRed = 0.1;
 let tGreen = 0.2;
 let tBlue = 0.9;
 let tInc = 0.001;
-let detail = 4;
-let falloff = 0.5;
+let detail = 6;
+let falloff = 0.5
+let noiseScaleX = 10;
+let noiseScaleY = 10;
 
 function setup() {
   screenW = windowWidth;
@@ -49,13 +51,14 @@ function draw() {
 }
 
 function mouseMoved() {
-  falloff = map(mouseX, 0, screenW, 0.1, 0.8);
-  detail = Math.floor(map(mouseY, 0, screenH, 10, 2));
+  noiseScaleX = map(mouseX, 0, screenW, 1, 1000);
+  noiseScaleY = map(mouseY, 0, screenH, 1000, 1);
+  
 }
 
 function keyPressed() {
   if (key === 's') {
-    saveGif('genuary2024_prompt4', 3);
+    saveGif('genuary2024_prompt4b', 4);
   }
 }
 
@@ -72,9 +75,9 @@ class Pixel {
   }
 
   update() {
-    this.red = color(noise(this.x, this.y, tRed) * 255, 0, 0);
-    this.green = color(0, noise(this.x, this.y, tGreen) * 255, 0);
-    this.blue = color(0, 0, noise(this.x, this.y, tBlue) * 255);
+    this.red = color(noise(this.x / noiseScaleX, this.y / noiseScaleY, tRed) * 255, 0, 0);
+    this.green = color(0, noise(this.x / noiseScaleX, this.y / noiseScaleY, tGreen) * 255, 0);
+    this.blue = color(0, 0, noise(this.x / noiseScaleX, this.y / noiseScaleY, tBlue) * 255);
   }
 
   draw() {
