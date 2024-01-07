@@ -32,6 +32,13 @@ Repo for my contributions to [genuary.art](https://genuary.art/).
 - [Live sketch](https://openprocessing.org/sketch/2137654)
 - [Code](2024/prompt04/sketch.js)
 
+### Prompt 5: In the style of Vera Molnár
+
+![Vera Molnar](2024/prompt05/genuary2024_prompt5.gif)
+
+- [Live sketch](https://openprocessing.org/sketch/2137897)
+- [Code](2024/prompt05/sketch.js)
+
 ## 2023
 
 ### Prompt 1: Perfect loop
