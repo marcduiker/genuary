@@ -15,6 +15,8 @@ Repo for my contributions to [genuary.art](https://genuary.art/).
 
 ### Prompt 2: No palette
 
+![No palette](2024/prompt02/genuary2024_prompt2.png)
+
 - [Live sketch](https://openprocessing.org/sketch/2135107)
 - [Code](2024/prompt02/sketch.js)
 
@@ -44,6 +46,8 @@ Repo for my contributions to [genuary.art](https://genuary.art/).
 See prompt 4 😁
 
 ### Prompt 7: Progress bar
+
+`//TODO`
 
 ### Prompt 8: Chaotic system
 
