@@ -53,6 +53,7 @@ See prompt 4 😁
 
 ![Chaotic system](2024/prompt08/genuary2024_prompt8.gif)
 
+- [Live sketch](https://openprocessing.org/sketch/2139284)
 - [Code](2024/prompt08/sketch.js)
 
 ## 2023
