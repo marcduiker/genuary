@@ -39,6 +39,18 @@ Repo for my contributions to [genuary.art](https://genuary.art/).
 - [Live sketch](https://openprocessing.org/sketch/2137897)
 - [Code](2024/prompt05/sketch.js)
 
+### Prompt 6: Screen saver
+
+See prompt 4 😁
+
+### Prompt 7: Progress bar
+
+### Prompt 8: Chaotic system
+
+![Chaotic system](2024/prompt08/genuary2024_prompt8.gif)
+
+- [Code](2024/prompt08/sketch.js)
+
 ## 2023
 
 ### Prompt 1: Perfect loop
