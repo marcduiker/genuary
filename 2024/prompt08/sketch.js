@@ -59,7 +59,7 @@ function mousePressed() {
 
 function keyPressed() {
   if (key === 's') {
-    saveGif('genuary2024_prompt8', 3);
+    saveGif('genuary2024_prompt8', 4);
   }
 }
 
