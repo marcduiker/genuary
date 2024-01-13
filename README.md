@@ -56,6 +56,12 @@ See prompt 4 😁
 - [Live sketch](https://openprocessing.org/sketch/2139284)
 - [Code](2024/prompt08/sketch.js)
 
+### Prompt 9: ASCII
+
+![ASCII](2024/prompt09/genuary2024_prompt9.gif)
+
+- [Code](2024/prompt09/sketch.js)
+
 ## 2023
 
 ### Prompt 1: Perfect loop
