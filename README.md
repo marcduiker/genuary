@@ -47,7 +47,10 @@ See prompt 4 😁
 
 ### Prompt 7: Progress bar
 
-`//TODO`
+![Progress bar](2024/prompt07/genuary2024_prompt7.gif)
+
+- [Live sketch](https://openprocessing.org/sketch/)
+- [Code](2024/prompt07/sketch.js)
 
 ### Prompt 8: Chaotic system
 
